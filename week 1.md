@@ -27,7 +27,7 @@ These two would contain moslty all the tools you would ever need for either Wind
 |3| One liner to copy a _folder_ to a directory named **week-1** on remote server/vagrant VM  | 50  |	C	|
 |4| SFTP connection to the remote server/ vagrant VM  | 50  |	S	|
 |5| Proxy Setting using export command  | 50  |		C	|
-|6| Setting up vagrant VM<sup>2</sup>  | 100  |		G/V	|
+|6| Setting up vagrant VM  | 100  |		G/V	|
 |7| Setting up vagrant Flare-VM  | 100  |		G/V	|
 |8| **BONUS** : Write a script for task 1-5	| 200	| C	|
 || **TOTAL** 	| **650**	|
