@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh user@machine_ip:port | command
+ssh user@machine_ip -p port | command
