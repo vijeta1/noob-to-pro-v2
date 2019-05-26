@@ -8,44 +8,19 @@ echo -n "Enter choice (1-5): "
 read c
 case $c in
 (1)
-echo -n "port-no.: "
-read port
-echo -n "user-id: "
-read user
-echo -n "server-ip: "
-read server_ip
-echo "......"
-ssh -R $port:localhost:22 $user@$server_ip ;;
+ssh -R 20001:localhost:30001 root@192.168.43.108 ;;
 
 (2)
 echo "......"
-ssh localhost echo -n "..";uname -a; ;;
+ssh localhost uname -a; ;;
 
 (3)
-echo -n "enter source directory: "
-read sdir
-echo -n "enter destination source directory: "
-read ddir
-echo -n "user-id: "
-read user
-echo -n "server-ip: "
-read server_ip
-echo "......"
-scp -r $sdir $user@$server_ip:$ddir ;;
+scp -r /home/myserver/folder ipir140@192.168.43.108:/home/remote/week-1;;
 
 (4)
-echo -n "user-id: "
-read user
-echo -n "server-ip: "
-read server_ip
-echo "......"
-sftp $user@$server_ip ;;
+sftp ipir140@192.168.42.121 ;;
 
 (5)
-echo -n "username: "
-read username
-echo -n "password: "
-read password
 export http_proxy="http://username:password@172.31.2.4:8080"
 export https_proxy="https://username:password@172.31.2.4:8080"
 export ftp_proxy="ftp://username:password@172.31.2.4:8080" ;;
