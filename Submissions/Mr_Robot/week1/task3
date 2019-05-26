@@ -1,2 +1,0 @@
-#!/bin/bash
-scp -r /path1/folder user@remotehost:/path2/week1
