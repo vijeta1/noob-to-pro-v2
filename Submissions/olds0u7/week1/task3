@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh user@machine_ip -p port cp folder_name ./week-1
+scp folder_name username@ip_address:/remote/week-1
