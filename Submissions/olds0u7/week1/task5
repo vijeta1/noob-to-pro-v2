@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export $http_proxy="http://user_id:password@proxy_server:port/"
 export $https_proxy="https://user_id:password@proxy_server:port/"
 export $ftp_Proxy="ftp://user_id:password@proxy_server:port/"
