@@ -1,1 +1,1 @@
-
+sftp -oPort=any_open_port user@machine_ip
