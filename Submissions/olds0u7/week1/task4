@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sftp -p port_number user@ip_address
