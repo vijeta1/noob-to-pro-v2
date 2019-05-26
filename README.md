@@ -12,7 +12,7 @@
 This week will cover the basics related to setting up the enviroment and install all the necessary softwares and adjust VMs according to our need.
 
 ### Week2
-To-Do
+This week will cover topics related to shell scripting, Usage of Sed and Awk. The tasks are to be performed on the given access.log file.
 
 ### Week3
 To-Do
