@@ -1,0 +1,1 @@
+scp -r folder_to_copy root2@localhost:/home/root2/week1
