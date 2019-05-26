@@ -1,0 +1,3 @@
+#!/bin/bash
+
+scp folder_name username@ip_address:/remote/week-1
