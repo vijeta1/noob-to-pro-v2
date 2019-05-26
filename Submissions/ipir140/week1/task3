@@ -1,0 +1,1 @@
+scp -r /home/myserver/folder ipir140@192.168.43.108:/home/remote/week-1
