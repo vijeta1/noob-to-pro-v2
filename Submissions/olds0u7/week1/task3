@@ -1,1 +1,2 @@
 
+ssh user@machine_ip -p port cp folder_name ./week-1
