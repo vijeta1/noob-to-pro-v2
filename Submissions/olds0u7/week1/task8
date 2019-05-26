@@ -1,1 +1,21 @@
+#!/bin/bash
+
+echo "Executing commands one by one"
+
+ssh -R any_port_listening:localhost:local_port source_user:source_ip
+exit
+
+ssh user@ip_address -p port_number valid_command
+exit
+
+scp folder_name username@ip_address:/remote/week-1
+
+sftp user@ip_address
+exit
+
+export http_proxy="http://user_id:password@proxy_server:port/"
+export https_proxy="https://user_id:password@proxy_server:port/"
+export ftp_proxy="ftp://user_id:password@proxy_server:port/"
+
+
 
