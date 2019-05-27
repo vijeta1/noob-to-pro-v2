@@ -1,4 +1,0 @@
-ssh DESTINATION_USER@DESTINATION_IP "whoami"
-eg.   
-> ssh root2@192.168.43.21 "whoami"
-< root2
