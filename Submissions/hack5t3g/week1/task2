@@ -1,0 +1,5 @@
+ssh user_name@ip_of_home_server
+# It will reconfirm wether to continue type yes
+# It wil ask for password
+user_name@server_ip's password: Login_Password
+# you will be logged in to the server's ssh interface
