@@ -1,0 +1,2 @@
+ssh -R 10001:localhost:22 useronB@B
+#10001 can be any port for listening and B is the ip of the machine from which we want to access the current machine
