@@ -1,0 +1,3 @@
+export http_proxy="http://USER:PASSWORD@PROXY_SERVER:PORT"
+export https_proxy="https://USER:PASSWORD@PROXY_SERVER:PORT"
+export ftp_proxy="http://USER:PASSWORD@PROXY_SERVER:PORT"
