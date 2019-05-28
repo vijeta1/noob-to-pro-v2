@@ -1,0 +1,1 @@
+ssh -R random_port_no.:ip_of_server_to_enter:remote_desktop_port username@ip_of_home_server
