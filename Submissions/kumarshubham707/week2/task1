@@ -1,0 +1,1 @@
+awk -F\" '!/Chrome/{print $0} {print $6}' access.log
