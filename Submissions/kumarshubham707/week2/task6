@@ -1,0 +1,1 @@
+awk -vDate='[13/May/2018:12:00:00' -vDate2='[13/May/2018:14:52:50' '{ if ($4 > Date && $4 < Date2) print $0}' access.log
