@@ -1,0 +1,1 @@
+cat access.log | awk '$4 >= "[12/May/2018:08:00:00" && $4 < "[12/May/2018:09:00:00"'  |awk 'BEGIN{sum=0;}{sum+=$10;} END{print sum;}'
