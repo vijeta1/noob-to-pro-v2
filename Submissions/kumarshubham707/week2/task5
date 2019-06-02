@@ -1,1 +1,0 @@
-awk '{if($9=404) for(i=1;i<=8;i++) printf $i" "; for(i=11;i<=NF;i++) printf $i" ";  print NL;}' access.log | awk -F\" '$6="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"' > output.csv
