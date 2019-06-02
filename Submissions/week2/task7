@@ -1,1 +1,0 @@
-awk 'BEGIN{count=0}{count++}END{printf("total lines %d: \n",count)}' access.log2
