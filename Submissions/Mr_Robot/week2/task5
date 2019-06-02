@@ -1,0 +1,2 @@
+cat access.log|sed -n '/404/p' |awk '{print "#,"$1","$4","$5","$7","$8 } '|awk -F\" '$8="Mozilla/5.0 (compatible; Googleb
+ot/2.1; +http://www.google.com/bot.html)"' >task5.csv
