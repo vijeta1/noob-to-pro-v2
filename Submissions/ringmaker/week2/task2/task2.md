@@ -1,3 +1,3 @@
 ```
-cat access.log | grep -i POST
+awk '/POST/' access.log
 ```

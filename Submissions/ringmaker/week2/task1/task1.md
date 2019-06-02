@@ -1,3 +1,3 @@
 ```
-cat access.log | grep -i Chrome
+sed  -n '/Chrome/ !p' access.log
 ```
