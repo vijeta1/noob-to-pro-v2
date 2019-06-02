@@ -1,0 +1,7 @@
+echo "Lineno|ip_addr|date_accessed|endpoint_accessed|useragent" >task4.csv
+ 
+
+awk 'BEGIN {i=1;min=20;max=33}/ 404 /{if(NR>=min)
+{if(NR<=max)
+{ print i++" "$1" |" $4 " "$5" | "$12" "$13" "$14" "$15" "$16" "$17" "$18" "$19" "$20" "$21" | "$22" "$23  }
+}}' access.log >>task4.csv
