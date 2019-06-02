@@ -1,1 +1,0 @@
-awk -F'[: ]' 'BEGIN{sum=0}{if ($4 ~ "12/May"){if ($5>=8 && $5<9 || $5==9&& $6<=00 && $7<=00 ) sum+=$13}}END {print sum}' access.log2
