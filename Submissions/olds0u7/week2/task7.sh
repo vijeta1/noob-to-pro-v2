@@ -1,0 +1,2 @@
+
+sed -n \$= access.log
