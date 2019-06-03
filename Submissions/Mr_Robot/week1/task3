@@ -1,0 +1,2 @@
+#!/bin/bash
+scp -r folder1 host2@192.168.42.22:/home/host2/week-1

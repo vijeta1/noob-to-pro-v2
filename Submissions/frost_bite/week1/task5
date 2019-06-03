@@ -1,0 +1,3 @@
+$ export http_proxy="http://iit2018001:lol@172.31.2.4:8080"
+$ export https_proxy="https://iit2018001:lol@172.31.2.4:8080"
+$ export ftp_proxy="http://iit2018001:lol@172.31.2.4:8080"

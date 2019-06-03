@@ -1,0 +1,5 @@
+awk -vtotalsize=0 '{split($4,a,":"); if(a[1]=="[12/May/2018"&&a[2]>=8&&a[2]<=9){
+totalsize+=$10;
+}};
+END {print totalsize}'  access.log
+

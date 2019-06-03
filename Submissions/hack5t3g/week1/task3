@@ -1,0 +1,1 @@
+scp -r /local_host/given_folder/ username@to_host:/remote_host/week-1/

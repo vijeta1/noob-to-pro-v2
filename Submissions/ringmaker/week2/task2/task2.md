@@ -1,0 +1,3 @@
+```
+awk '/POST/' access.log
+```

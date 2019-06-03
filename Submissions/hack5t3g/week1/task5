@@ -1,0 +1,1 @@
+export {http,https,all}_proxy="http://USER:PASSWORD@PROXY_SERVER:PORT"
