@@ -3,7 +3,6 @@
 
 **( Timeline : 03<sup>st</sup> June'19 - 09<sup>th</sup> June'19 )**
  
- **All the below actions are to be performed on given access.log file**
 
 |#| Task		| Points	|	Format To Submit	|
 |--| ------------- 	| -------------	|	-------------------		|
