@@ -1,2 +1,2 @@
 
-sed -n \$= access.log
+awk 'END{print NR}' access.log
