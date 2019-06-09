@@ -1,0 +1,3 @@
+export HTTP_PROXY=user:pass@my.proxy.server:8080
+export HTTPS_PROXY=user:pass@my.proxy.server:8080
+

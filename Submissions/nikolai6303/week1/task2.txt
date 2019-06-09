@@ -1,0 +1,1 @@
+ssh remote_username@remote_host ls

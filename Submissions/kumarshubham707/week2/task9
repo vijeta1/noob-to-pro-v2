@@ -1,0 +1,1 @@
+awk -vDate='[12/May/2018:08:00:00' -vDate2='[12/May/2018:09:00:00' -vsum=0 '{if ($4 > Date && $4 < Date2) sum=sum+$10} END {print sum}' access.log

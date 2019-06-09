@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -R any_port_for_listening:localhost:22 sourceuser@source_ip

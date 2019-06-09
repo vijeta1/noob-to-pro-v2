@@ -1,0 +1,2 @@
+
+awk '{print $10}' access.log

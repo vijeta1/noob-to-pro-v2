@@ -23,7 +23,7 @@ These two would contain moslty all the tools you would ever need for either Wind
 |#| Task		| Points	|	Format To Submit	|
 |--| ------------- 	| -------------	|	-------------------		|
 |1| SSH Reverse tunnelling ( one liner script )<sup>1</sup>  | 50  |	C	|
-|2| SSH script ( one liner script ) to unning remote commands from local host  | 50 |  C |
+|2| SSH script ( one liner script ) to running remote commands from local host  | 50 |  C |
 |3| One liner to copy a _folder_ to a directory named **week-1** on remote server/vagrant VM  | 50  |	C	|
 |4| SFTP connection to the remote server/ vagrant VM  | 50  |	S	|
 |5| Proxy Setting using export command  | 50  |		C	|
