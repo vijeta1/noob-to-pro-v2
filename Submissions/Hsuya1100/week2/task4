@@ -1,0 +1,1 @@
+awk   '$9 ~ /404/{print $0}' access.log2 | awk  '{printf" %s  %s ]  %s   ",$1,$4,$7}{for(i=12;i<24;i++) printf $i}{printf"\n"}' |awk  '{$1=++i FS $1;}1' FS=' :> ' |awk 'NR>=20 && NR<=33{print}'
