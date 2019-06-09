@@ -1,0 +1,1 @@
+awk -v from="[13/May/2018:12:00:00" -v to="[13/May/2018:14:52:50" '$4>=from && $4<=to' access.log
