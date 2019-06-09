@@ -1,0 +1,62 @@
+Last login: Sat Jun  8 01:20:43 on ttys000
+apples-MacBook-Air:~ apple$ curl -I -v http://www.mocky.io/v2/5b026eb43000007a00cee110
+*   Trying 52.18.135.106...
+* TCP_NODELAY set
+* Connected to www.mocky.io (52.18.135.106) port 80 (#0)
+> HEAD /v2/5b026eb43000007a00cee110 HTTP/1.1
+> Host: www.mocky.io
+> User-Agent: curl/7.54.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+< Server: Cowboy
+Server: Cowboy
+< Connection: keep-alive
+Connection: keep-alive
+< Flag: noobToPro{this_is_basic_flag_}
+Flag: noobToPro{this_is_basic_flag_}
+< Date: Fri, 07 Jun 2019 19:59:06 GMT
+Date: Fri, 07 Jun 2019 19:59:06 GMT
+< Content-Type: application/json
+Content-Type: application/json
+< Content-Length: 39
+Content-Length: 39
+< Via: 1.1 vegur
+Via: 1.1 vegur
+
+< 
+* Connection #0 to host www.mocky.io left intact
+apples-MacBook-Air:~ apple$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
