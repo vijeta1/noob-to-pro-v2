@@ -1,16 +1,20 @@
 import requests
 import json
+import csv
 
-page=requests.get('https://jsonplaceholder.typicode.com/comments')
+page=requests.get('https://jsonplaceholder.typicode.com/posts')
 
 data=page.json()
 
-a=[]
+f=csv.writer(open('task.csv','w'))
+f.writerow(['userId','id','title','body'])
 
 for i in data:
-  if i['email'] not in a:
-    a.append(i['email'])
-    
-for j in a:
-  print(j)
-  
+  userId=i['userId']
+  id1=i['id']
+  title=i['title']
+  body=i['body']
+  f.writerow([userId,id1,title,body])
+ 
+
+
