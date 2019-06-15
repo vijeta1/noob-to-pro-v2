@@ -1,0 +1,1 @@
+awk  '/POST/ {print $0 "\n"}' access.log

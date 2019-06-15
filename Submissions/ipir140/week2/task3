@@ -1,0 +1,1 @@
+awk '{if($9=="404")  {printf ++k "," $1 "," $4 "," $5 "," $7 ",";{for(i=12;i<NF;i++) printf $i} printf $NF "\n";}}' access.log >task3.csv

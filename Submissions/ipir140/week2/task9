@@ -1,0 +1,1 @@
+awk  '/12[/]May[/]2018:08:/ {total=total+$10}  END {print total}' access.log

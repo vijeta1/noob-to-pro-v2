@@ -1,0 +1,1 @@
+curl -Ls https://jsonplaceholder.typicode.com/posts | jsonv userId,id,title,body > output.csv

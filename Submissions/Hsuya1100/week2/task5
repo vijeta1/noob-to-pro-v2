@@ -1,0 +1,1 @@
+awk   '$9 ~ /404/{print $0}' access.log2 | awk  '{printf" %s  %s ]  %s   ",$1,$4,$7}{printf"\n"}' |awk  '{$1=++i FS $1;}1' FS=' :> '|awk -F, '{$(NF+1)="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";}1' OFS=
