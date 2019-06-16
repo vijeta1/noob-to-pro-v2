@@ -9,10 +9,14 @@ if(isset($_POST['user'])){
 	$isuser=0;
 	$result=$login->xpath("/company/employee[user='$user']");
 	foreach($result as $employ) {
-        	echo "hello {$employ->firstname}<br />";
-		exit();
+		if(employ->pass==$pass){
+			echo "hello {$employ->firstname}<br />";
+			$isuser=1;
+		}
     	}
-	echo("username or password incorrect");
+	if(!$isuser){
+		echo("username or password incorrect");
+	}
 	exit();
 }
 
