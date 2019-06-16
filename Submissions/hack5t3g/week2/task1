@@ -1,1 +1,0 @@
-awk '!/Chrome/ {print}' access.log
