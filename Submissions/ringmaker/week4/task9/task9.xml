@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<company>
+	<employee>
+		<user>admin</user>
+		<pass>admin</pass>
+		<firstname>Tom</firstname>
+		<lastname>Cruise</lastname>
+		<designation>MD</designation>
+		<salary>500000</salary>
+	</employee>
+	<employee>
+		<user>newadmin</user>
+                <pass>newadmin</pass>
+		<firstname>Tyler</firstname>
+		<lastname>Horne</lastname>
+		<designation>CEO</designation>
+		<salary>250000</salary>
+	</employee>
+</company>
