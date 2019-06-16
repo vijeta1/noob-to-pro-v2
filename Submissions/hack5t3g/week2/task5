@@ -1,5 +1,0 @@
-awk '{for(i=1;i<=11;i++) printf $i" "; print "Googlebot/2.1 (+http://www.google.com/bot.html) \""}' access.log | 
-awk '/404/ {print}'| awk 'BEGIN { print "#, ip_addr, date_accessed, endpoint_accessed,  useragent" } 
-{ printf "#, %s, %s], %s,  %s %s\n",$1,$4,$7,$12,$13}' > task5.csv
-
-cat task5.csv
