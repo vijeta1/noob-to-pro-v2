@@ -1,0 +1,13 @@
+import psutil
+battery = psutil.sensors_battery()
+print battery
+print(psutil.virtual_memory())
+drps = psutil.disk_partitions()
+
+print drps
+print(psutil.net_connections())
+print psutil.boot_time()
+print psutil.cpu_times()
+
+print psutil.disk_io_counters()
+print psutil.Process()
