@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<?php
+if (isset($_GET['login']))
+{   if(strcmp($_GET['login'],"abc")===0)
+	{
+		echo "here is your second flag:down_to_earth";
+    	}
+	else{
+        	echo "no chance";
+	}
+}
+?>
+
+<html>
+<head>
+</head>
+<body>
+
+<div id="main">
+
+    <h1> enter flag string to enter</h1>
+
+    
+    <form  method="GET">
+
+        <p><label for="login">Login:</label><br />
+        <input type="text"  name="login" size="20" autocomplete="off" /></p>
+
+
+        <button type="submit" name="form" value="submit">Login</button>
+
+    </form>
+
+    <br />
+
+
+</div>
+</body>
