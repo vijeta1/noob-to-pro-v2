@@ -1,2 +1,0 @@
-awk -v from="[12/May/2018:08:00:00" -v to="[12/May/2018:09:00:00" '$4>=from && $4<=to' access.log | 
-awk -F' ' '{sum+=$10;}END{print sum;}'
