@@ -1,0 +1,48 @@
+import platform
+import os
+
+
+print("Architecture: "+ platform.architecture()[0])
+
+print("Machine: "+platform.machine())
+
+print("node:"+platform.node())
+
+print("system: "+platform.system())
+
+print("Processors:")
+with open("/proc/cpuinfo", "r")  as f:
+    lines = f.readlines()
+cpuinfo = [x.strip().split(":")[1] for x in lines if "model name"  in x]
+for index, item in enumerate(cpuinfo):
+    print("    " + str(index) + ": " + item)
+
+f = open("/sys/class/power_supply/BAT1/capacity","r")
+print("battery percentage "+f.readline()+"%")
+f.close()
+
+with open("/proc/meminfo","r") as  f:
+    lines=f.readlines()
+print('memoryinfo:  ' + lines[0])
+print("             "+lines[1])
+
+
+disk = os.statvfs("/var/")
+totalBytes = float(disk.f_bsize*disk.f_blocks)
+
+print("total space: %.2f GBytes" % (totalBytes/1024/1024/1024))
+
+totalUsedSpace = float(disk.f_bsize*(disk.f_blocks-disk.f_bfree))
+
+print("used space: %.2f GBytes" % (totalUsedSpace/1024/1024/1024))
+
+totalAvailSpace = float(disk.f_bsize*disk.f_bfree)
+
+print ("available space: %.2f GBytes" % (totalAvailSpace/1024/1024/1024))
+
+
+
+
+
+
+
