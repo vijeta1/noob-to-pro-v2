@@ -1,0 +1,6 @@
+awk 'NR >= 20 && NR <= 33' access.log  | awk '/404/ {print}' 
+| awk 'BEGIN { print "#, ip_addr, date_accessed, endpoint_accessed,  useragent" } 
+{ printf "#, %s, %s], %s,  %s %s %s %s %s %s %s %s %s %s %s %s\n",$1,$4,$7,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23}' 
+> task4.csv
+
+cat task4.csv
