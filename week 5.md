@@ -1,7 +1,7 @@
 
 # Week-5 :
 
-**( Timeline : 17<sup>st</sup> June'19 - 23<sup>rd</sup> June'19 )**
+**( Timeline : 17<sup>th</sup> June'19 - 23<sup>rd</sup> June'19 )**
  
  **Basic Reverse engineering and Pwning**
  
