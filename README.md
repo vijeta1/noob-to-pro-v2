@@ -21,7 +21,7 @@ This week will cover Python scipting, automating of some tasks. And also Learn a
 This week involves Foot-Printing and a bit of development where you will be asked to develop some websites having vulnerabilities and exploit them, also learn about different foot-printing methodologies (Shodan, Google dorks ..)
 
 ### Week5
-To-Do
+This week we will try to get our basics clear for pwn and rev.
 
 ### Week6
 To-Do
