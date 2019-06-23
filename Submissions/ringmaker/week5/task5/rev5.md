@@ -11,8 +11,8 @@ it contains our passed string so we concentrate on check function to not return 
 5) takes fourth character compare it to 0x61 = 'a'
 <br/>
 it becomes aqua<br/>
-then there is a loop<br/> 
-![](./rev5-2.png) <br/>
+then there is a loop <br/> 
+![](./rev5-2.png) 
 with one index(i) on start and index(j) at end <br/>
 if any time character at i does not maches char at index j it return 0x0 <br/>
 loop break when i passes j <br/>
