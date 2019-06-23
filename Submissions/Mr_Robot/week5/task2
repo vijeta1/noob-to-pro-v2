@@ -1,0 +1,8 @@
+open folder containing rev2-crackme0x01 in terminal
+we will use gdb for this
+type gdb rev2-crackme0x01
+now inspect main fn
+type disas main
+we can see at <+71> cmpl is used against user input and 0x149a
+hence password is 5274(0x149a)
+
