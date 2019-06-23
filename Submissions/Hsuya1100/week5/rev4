@@ -1,0 +1,18 @@
+## This is same as rev3 only difference is that comparion of input and square of 582 is done in function (test)
+```
+	0804846e <test>:
+	 804846e:	55                   	push   ebp
+	 804846f:	89 e5                	mov    ebp,esp
+	 8048471:	83 ec 08             	sub    esp,0x8
+	 8048474:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+	 8048477:	3b 45 0c             	cmp    eax,DWORD PTR [ebp+0xc]
+	 804847a:	74 0e                	je     804848a <test+0x1c>
+	 804847c:	c7 04 24 ec 85 04 08 	mov    DWORD PTR [esp],0x80485ec
+	 8048483:	e8 8c ff ff ff       	call   8048414 <shift>
+	 8048488:	eb 0c                	jmp    8048496 <test+0x28>
+	 804848a:	c7 04 24 fe 85 04 08 	mov    DWORD PTR [esp],0x80485fe
+	 8048491:	e8 7e ff ff ff       	call   8048414 <shift>
+	 8048496:	c9                   	leave  
+	 8048497:	c3                   	ret  
+```
+So passsword is again : 338724
