@@ -1,3 +1,3 @@
-program compares password to 0x149a which is 5274
+program compares password to 0x149a which is 5274<br/>
 ![]<images/rev2.png>
-password=5274
+###password=5274
