@@ -1,7 +1,7 @@
 
 Yes code looks pretty long<br/>
 just focus on comparison part we break point near comparison<br/>
-print value of $ebp=0x2c<br/>
+print value of $ebp-0x2c<br/>
 ![](./rev5-1.png)
 it contains our passed string so we concentrate on check function to not return 0x0
 1) check string len > 0x13
