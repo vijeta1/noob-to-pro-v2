@@ -1,0 +1,17 @@
+Approach:
+--------------------------------------------------
+
+> strcmp gave HINT to use strings command piping its output to grep found the flag
+
+--------------------------------------------------
+
+code:
+-------------------------------------------------
+
+punisher1151@Fsociety:~/Desktop/noobie/week5/week-8$ strings rev1-strcmp |grep flag
+Usage: %s '<flag>'
+flag{sup3r_34sy_str1ng_ch3cks}
+
+--------------------------------------------------
+
+
