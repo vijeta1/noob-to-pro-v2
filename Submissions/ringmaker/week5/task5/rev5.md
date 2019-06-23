@@ -1,4 +1,4 @@
-
+![](./rev5-3.png)
 Yes code looks pretty long<br/>
 just focus on comparison part we break point near comparison<br/>
 print value of $ebp-0x2c<br/>
@@ -12,7 +12,7 @@ it contains our passed string so we concentrate on check function to not return 
 <br/>
 it becomes aqua<br/>
 then there is a loop<br/> 
-![](./rev5-2.png)<br />
+![](./rev5-2.png) <br />
 with one index(i) on start and index(j) at end <br/>
 if any time character at i does not maches char at index j it return 0x0 <br/>
 loop break when i passes j <br/>
