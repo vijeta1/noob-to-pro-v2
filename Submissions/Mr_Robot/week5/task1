@@ -1,0 +1,5 @@
+download file rev1-strcmp
+open the folder containing it in terminal
+type "strings rev1-strcmp"
+see the flag in the output
+ flag{sup3r_34sy_str1ng_ch3cks}
