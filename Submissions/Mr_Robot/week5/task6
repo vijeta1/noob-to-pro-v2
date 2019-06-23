@@ -1,0 +1,6 @@
+this one is a question of buffer overflow launch ghidra 
+inspect the main function we can se that local_54 is of size 64.
+we are using gets . so it will cause overflow .
+in this code any entry with size greater than 64 will cause overflow and will run the else statement.
+type
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
