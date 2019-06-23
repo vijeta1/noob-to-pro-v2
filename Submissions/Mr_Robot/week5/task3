@@ -1,0 +1,13 @@
+open folder containing rev2-crackme0x01 in terminal
+we will use gdb for this
+type gdb rev2-crackme0x02
+now inspect main fn
+type disas main
+to find passw lets set a break point before cmp and inspest 
+computer value
+type b *0x0804844e
+type run
+type x/dw $ebp - 0xc
+output value is "338724"
+hence the passwd
+ 
