@@ -1,5 +1,5 @@
 we check source code using hopper<br/>
-![]<pwn1.png>
+![](./pwn1.png)<br />
 although it shows 0x0!=0x0 which comparison can never pass<br/>
 but if a comparison can never pass it will not be included by compiler<br/>
 actually it is comparisong b/w some variable not equal to zero <br/>
