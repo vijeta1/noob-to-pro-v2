@@ -9,7 +9,6 @@ it contains our passed string so we concentrate on check function to not return 
 3) takes second character compare it to 0x71 = 'q'
 4) takes third character compare it to 0x75 = 'u'
 5) takes fourth character compare it to 0x61 = 'a'
-<br/>
 it becomes aqua<br/>
 then there is a loop <br/> 
 ![](./rev5-2.png) 
