@@ -1,0 +1,9 @@
+First we will make the binary executable by command
+$ chmod +x rev1-strcmp
+Now we will run the binary and we see that no flag is printed.
+Then we will try most basic command and try to find any string in binary by 
+$ strings rev1-strcmp
+
+and we have our flag "flag{sup3r_34sy_str1ng_ch3cks}"
+
+
