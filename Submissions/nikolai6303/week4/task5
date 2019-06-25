@@ -1,0 +1,2 @@
+#!/bin/bash
+shodan search --fields ip_str,org cisco

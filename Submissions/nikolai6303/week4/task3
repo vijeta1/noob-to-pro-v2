@@ -1,0 +1,3 @@
+shodan stats --facets country apache --limit 3
+shodan stats --facets org apache --limit 3
+
