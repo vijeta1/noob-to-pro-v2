@@ -1,0 +1,4 @@
+```
+shodan stats --facets country product:apache --limit 3
+shodan stats --facets org product:apache --limit 3
+```
