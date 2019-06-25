@@ -1,0 +1,17 @@
+Approach:
+--------------------------------------------------
+
+> Executing the binary asked for a password. Used objdump to diassemble the executable.
+
+> Found a jump statement and it compared 0x149a to a value probably input
+
+	804842b:	81 7d fc 9a 14 00 00 	cmpl   $0x149a,-0x4(%ebp)
+	8048432:	74 0e                	je     8048442 <main+0x5e>
+
+> 0x149a (hex) === 5274 (decimal) 
+
+	IOLI Crackme Level 0x01
+	Password: 5274
+	Password OK :)
+
+
