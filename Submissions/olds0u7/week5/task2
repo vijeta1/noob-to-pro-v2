@@ -1,0 +1,16 @@
+First we will make binary executable using 
+$ chmod +x rev2-crackme0x01
+Now we will check for any strings in binary we will not find any
+Then we will see the assembly of the program by
+$ objdump -d rev2-crackme0x01
+we get this 
+080483e4 <main>:
+ 8048426:	e8 e1 fe ff ff       	call   804830c <scanf@plt>
+ 804842b:	81 7d fc 9a 14 00 00 	cmpl   $0x149a,-0x4(%ebp)
+ 8048432:	74 0e                	je     8048442 <main+0x5e>
+
+Now we open up gdb and see that our input is compared with hex(0x149a) and then we jump to 8048442
+where 
+"Password OK :)" string is printed
+so now we know the correct password is hex(0x149a) i.e the "5274".
+

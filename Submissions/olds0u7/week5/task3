@@ -1,0 +1,33 @@
+Fisrt we will make binary executable by using command
+$ chmod +x rev3-crackme0x02
+Now we will find if there is any string present in binary by using strings command and we do not find anything usefull
+
+Now we will see the assembly code of binary using objdump
+$ objdump -d rev3-crackme0x02
+
+080483e4 <main>:
+ 8048426:	e8 e1 fe ff ff       	call   804830c <scanf@plt>
+ 804842b:	c7 45 f8 5a 00 00 00 	movl   $0x5a,-0x8(%ebp)
+ 8048432:	c7 45 f4 ec 01 00 00 	movl   $0x1ec,-0xc(%ebp)
+ 8048439:	8b 55 f4             	mov    -0xc(%ebp),%edx
+ 804843c:	8d 45 f8             	lea    -0x8(%ebp),%eax
+ 804843f:	01 10                	add    %edx,(%eax)
+ 8048441:	8b 45 f8             	mov    -0x8(%ebp),%eax
+ 8048444:	0f af 45 f8          	imul   -0x8(%ebp),%eax
+ 8048448:	89 45 f4             	mov    %eax,-0xc(%ebp)
+ 804844b:	8b 45 fc             	mov    -0x4(%ebp),%eax
+ 804844e:	3b 45 f4             	cmp    -0xc(%ebp),%eax
+ 8048451:	75 0e                	jne    8048461 <main+0x7d>
+ 
+ Our input goes to -0x4(%ebp) and in line number 18 we see that our input is moved to %eax and then in next line it is comapred to 
+ -0xc(%ebp) which in turn got it's value from %eax in line 0x8048448 
+ Now we open gdb in terminal with this binary and place a breakpoint at 0x804844b and then we will get the value of register $eax
+ by using command 
+ $ p/x $eax
+ we get hex(0x52b24)
+ Now we know our value is compared to hex(0x52b24) and then if it is equal then string 
+ "Password OK :)" is printed
+ so the correct password is hex(0x52b24) i.e "338724" in integer value.
+
+ 
+
