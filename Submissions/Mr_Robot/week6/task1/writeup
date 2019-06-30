@@ -1,0 +1,13 @@
+
+first setup dhcp server i am using parrot vm for attack which is assinged by ip 10.10.10.2 and two mr.robot vm assigned by ip 10.10.10.3 and 10.10.10.4
+launch nmap
+nmap -A 10.10.10.4
+we see the open ports and running services but result of no use.
+
+ we will launch nikto
+type nikto -h 10.10.10.4
+we will see robots.txt in result
+so 
+curl 10.10.10.3/robots.txt
+which give key 1 and a .dic file
+key1=073403c8a58a1f80d943455fb30724b9
