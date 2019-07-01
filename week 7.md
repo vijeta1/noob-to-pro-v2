@@ -7,8 +7,8 @@
  1. WebGoat.
  2. Burp suite (any version will be ok).
 
-|#| Task		| Points	|	Format to Submit |
-|--| ------------- 	| -------------	|
+|#| Task		| Points	|	Format to Submit         |
+|--| ------------- 	| -------------	           |
 |1| Setup WebGoat| 50 | S |
 |2| Setup Burp proxy  | 100| V | 
 |3| Complete Injection flaws |400| W |
