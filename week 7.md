@@ -1,4 +1,3 @@
-
 # Week-7 :
 
 **( Timeline : 1<sup>st</sup> July'19 - 07<sup>th</sup> July'19 )**
@@ -6,6 +5,8 @@
  **Basic Web exploitation(Requirements):**
  1. WebGoat.
  2. Burp suite (any version will be ok).
+ 
+
 |#| Task		| Points	|	Format To Submit	|
 |--| ------------- 	| -------------	|	-------------------		|
 |1| Setup WebGoat| 50 | S |
