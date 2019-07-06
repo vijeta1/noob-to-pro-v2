@@ -14,7 +14,7 @@ changing it to true
 ![](csrf3r.png)
 
 it says success :true
-got flag:25727
+got flag:22018
 
 ![](csrf3.png)
 
