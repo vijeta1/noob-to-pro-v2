@@ -16,8 +16,8 @@
 |5| Complete Access Control flow |300| W |
 |6| Complete Request Forgerie| 300 | W |
 |7| Complete chall "Admin lost password"  |400| W |
-|8| Complete chall "Admin lost password"| 600  | W |
-|| **TOTAL** 	| **2400**	|
+
+|| **TOTAL** 	| **1800**	|
 
 
 
