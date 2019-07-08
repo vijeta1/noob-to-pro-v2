@@ -14,11 +14,14 @@
 |5| Submit 2 Challenges on Forensics | E/M/H |
 
 
-Note : 1) You can make Challenges on any difficulty level. <BR>
+Note : <br>
+       1) You can make Challenges on any difficulty level. <BR>
        2) Each Chall must contain problem statement, file, Difficulty level, flag and way to solve. <br>
        3) Flag format : **JCTF{7hi5_1s_flag_f0rm4t}** <br>
+       4) It's highly restricted to copy chall from somewhere or from old CTFs. 
        
-Scoring : E - 50 <br>
+Scoring : <br>
+          E - 50 <br>
           M - 150<br>
           H - 300<br>
 
