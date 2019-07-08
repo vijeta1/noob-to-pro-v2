@@ -18,7 +18,7 @@ Note : <br>
        1) You can make Challenges on any difficulty level. <BR>
        2) Each Chall must contain problem statement, file, Difficulty level, flag and way to solve. <br>
        3) Flag format : **JCTF{7hi5_1s_flag_f0rm4t}** <br>
-       4) It's highly restricted to copy chall from somewhere or from old CTFs. 
+       4) Don't copy chall from somewhere or from old CTFs. 
        
 Scoring : <br>
           E - 50 <br>
