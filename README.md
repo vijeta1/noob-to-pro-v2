@@ -29,4 +29,4 @@ This week learning of pentesting starts, need to find 3 keys from given VM.
 ### Week7
 This week we will try to get our basics clear for Web Exploitations.
 ### Week8
-To-Do
+Final Week.
